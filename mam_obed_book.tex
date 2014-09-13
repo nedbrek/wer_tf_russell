@@ -1,5 +1,18 @@
-\documentclass{custom}
+\documentclass{book}
+\usepackage[includefoot]{geometry}
+\geometry{paperwidth=6in,paperheight=9in,
+vmargin=0.6in, % top and bottom margins
+inner=0.5in, % inside margin
+outer=0.5in, % outside margin
+bindingoffset=0.3in % gutter
+}
+\usepackage{fancyhdr} % to format headers/footers
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
 \begin{document}
+\frontmatter
 \title{\textbf{The Parable of the Wicked Mammon\\
 and\\
 The Obedience of the Christian Man}}
@@ -8,7 +21,10 @@ The Obedience of the Christian Man}}
 Edited By Edward Brekelbaum}
 \date{}
 \maketitle
+
 \tableofcontents
+
+\mainmatter
 \include{mammon}
 \include{obedience}
 \end{document}
